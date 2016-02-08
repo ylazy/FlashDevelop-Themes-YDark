@@ -1,0 +1,466 @@
+# base on
+# https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/doc/theme.fdi
+# https://github.com/JoeRobich/fd-vsthemes
+
+# FD UI THEME (5.1+)
+
+# System, Professional
+Global.UiRenderMode=Professional
+
+# Flat, Popup, Standard, System
+ComboBox.FlatStyle=Popup
+
+ScrollBar.UseCustom=True
+ScrollBar.HotForeColor=#A0A0A1
+ScrollBar.ArrowColor=#383838
+ScrollBar.HotArrowColor=#A0A0A1
+ScrollBar.ActiveArrowColor=#A0A0A1
+
+ListView.UseGrouping=True
+# màu khớp khi search - background (Outline Panel)
+# Highlighted item background (current item in the Results panel)
+ListView.Highlight=#49483E
+# màu text khớp khi search - text
+# Highlighted item text (current item in the Results panel)
+ListView.HighlightText=#F1F1F1
+# màu function khi đã click vào và roll out (Outline Panel)
+# Highlighted item background (matching items when doing a search in the Outline panel, selected item in the Types Explorer)
+TreeView.Highlight=#66D9EF
+# Highlighted item text (matching items when doing a search in the Outline panel, selected item in the Types Explorer)
+TreeView.HighlightText=#F1F1F1
+
+# TraceLevel.DEBUG = 1 (Output Panel)
+# Flash log viewer panel
+# Debug text (all text not matched by warning or error regexes)
+FlashLogViewer.DebugColor=#F1F1F1
+# TraceLevel.WARNING = 5 (Output Panel)
+# Warning text (warnings, matched by the warning regex)
+FlashLogViewer.WarningColor=#E6DB74
+# TraceLevel.ERROR = 3  (Output Panel)
+# Error text (errors, matched by the error regex)
+FlashLogViewer.ErrorColor=#FF3232
+# Lẽ ra phải có chứ nhể?
+# FlashLogViewer.FatalColor=#FF0000
+
+# Output panel (see OutputPanel > HighlightMarkers setting)
+# màu commands và trace thường: TraceLevel.INFO = 0
+# Info text (compile status)
+OutputPanel.InfoColor=#D7D7D7
+# màu trace bình thường
+# Debug text (traces)
+OutputPanel.DebugColor=#F1F1F1
+# Compiler warning text
+OutputPanel.WarningColor=#E6DB74
+# throw Error
+# Compiler error text (including warning and error lines)
+OutputPanel.ErrorColor=#FF3232
+# TraceLevel.FATAL = 4 (Output Panel) - lỗi nghiêm trọng
+# Fatal text ("Fatal" custom highlight marker)
+OutputPanel.FatalColor=#FF0000
+# Running process: C:\Program...
+# FD process start text (fdbuild start)
+OutputPanel.ProcessStartColor=#F92672
+# [Starting debug session with FDB]
+# FD process end text (fdbuild complete)
+OutputPanel.ProcessEndColor=F92672
+# màu khớp khi search (Output Panel)
+# Matching text background
+OutputPanel.HighlightColor=#49483E
+
+# Data tree control (data views in Locals, Watch debugger panels)
+# Item text if a watch can't be resolved (e.g. identifier is out of scope or misspelled)
+DataTreeControl.GrayText=#808080
+# Item text if there is an error evaluating a variable or a watch
+DataTreeControl.ErrorText=#FF3232
+# Highlighted item text (current item)
+DataTreeControl.HighlightText=#FFFFFF
+# Table grid lines
+DataTreeControl.LineColor=#808080
+
+# Project tree view (tree view in Project panel)
+# SWF/SWC internal node text (e.g. exploring inside of an SWC or an SWF)
+ProjectTreeView.InputColor=#66D9EF
+# SWF/SWC node text if there is an issue reading an SWF/SWC
+ProjectTreeView.SubItemColor=#808080
+# Input SWF node text (?)
+ProjectTreeView.ErrorColor=#FF3232
+
+# Completion list, snippet list (press Ctrl-B in the editor to open the snippets list, Ctrl-Alt-Space or type "new " to see the class name completion list)
+# Selected line text
+CompletionList.SelectedTextColor=#FFFFFF
+# Selected line background
+CompletionList.SelectedBackColor=#3E3E40
+# Package text
+CompletionList.PackageColor=#AE81FF
+
+# tr.ace( => FD hiển thị code hint tr.ace(output:*, from:*=null...) trong đó output:* in đậm màu SelectedFore và nền là InfoColor
+# Method call tip
+# Selected argument text
+MethodCallTip.SelectedFore=#FFFFFF
+# Selected argument background
+MethodCallTip.SelectedBack=#49483E
+# di chuột vào 1 method hoặc variable nó sẽ hiện method hint màu SelectedForevà dòng chữ nhỏ "in com.ylazy...." có màu InfoColor. Cần restart FD để có hiệu lực
+# Additional info text
+MethodCallTip.InfoColor=#66D9EF
+
+# Data grid view (data view in Breakpoints debugger panels)
+# Table grid lines
+DataGridView.LineColor=#A0A0A0
+
+# Text boxes that appear in toolbars and panels (search text field in Quick find bar, search text field in Outline panel)
+# Search field invitation text ("Search..." in the Outline panel)
+ToolStripTextBoxControl.GrayText=#808080
+# Quick find bar (Ctrl-F)
+# Quick find bar background color if there are no matches found
+QuickFind.ErrorBack=#FF3232
+
+# FD UI THEME (5.0+)
+
+# When applying theme colors to a control based on type, whether to apply colors of control's base type before applying for it's own type
+#ThemeManager.UseInheritance=True
+
+# Image filter applied to toolbar and project panel icons (Bright, Default, Dim, Dark, Darker, Black)
+ImageManager.ImageSet=Black
+
+# Document tabs height (Default, Large) (Large tabs are taller than Default)
+VS2005DockPaneStrip.TabSize=Large
+
+# Document tabs style (Default, Block, Rect) (Default/Block look like tabs, Rect is rectangular shape and narrower)
+VS2005DockPaneStrip.TabStyle=Rect
+
+# Auto-hide panel strip style (Default, Underlined) (Default is with icons, Underlined is plain underlined text and narrower)
+VS2005AutoHideStrip.TabStyle=Default
+# Auto-hide panel strip style underline (when using Underlined style)
+VS2005AutoHideStrip.TabUnderlineColor=#272822
+
+# Panel strip open behavior (Default, Hover, Click) (Default/Hover - mouse over to open a panel, Click - click to open a panel)
+DockPanel.ShowAutoHideContentOn=Click
+
+# Editor scrollbars
+# Thumb and buttons
+ScrollBar.ForeColor=#383838
+# Background
+ScrollBar.BackColor=#272823
+# Rectangular border
+ScrollBar.BorderColor=#272823
+# Thumb during dragging
+ScrollBar.ActiveForeColor=#A0A0A1
+# Disabled scrollbar background
+ScrollBar.DisabledBackColor=#272823
+# Disabled scrollbar border
+ScrollBar.DisabledBorderColor=#272823
+# Small line marking the position of the caret line on the vertical scrollbar
+ScrollBar.CurrentPositionColor=#A0A0A1
+
+# Link label (links in the Project panel when there's no project open)
+# Link text
+LinkLabel.LinkColor=#F92672
+# Active (pressed) link text
+LinkLabel.ActiveLinkColor=#66D9EF
+# Disabled link text
+LinkLabel.DisabledLinkColor=#75715E
+
+# List/table column header (files list view in Files panel)
+# Background
+ColumnHeader.BackColor=#272822
+# Text
+ColumnHeader.TextColor=#F1F1F1
+# Column separator and border (horizontal line on the bottom)
+ColumnHeader.BorderColor=#A0A0A0
+
+# Combo boxes that appear in toolbars and panels (Debug/Release build in main toolbar, path selector in Files panel)
+# Border
+ToolStripComboBoxControl.BorderColor=#A0A0A0
+# Border when focused or mouse overed
+ToolStripComboBoxControl.ActiveBorderColor=#A0A0A0
+
+# Text boxes that appear in toolbars and panels (search text field in Quick find bar, search text field in Outline panel)
+# Border
+ToolStripTextBoxControl.BorderColor=#A0A0A0
+
+# Horizontal line below panel toolbars (below search text field in Output panel, below icons toolbar in Project panel)
+ToolStrip.BorderColor=#272822
+# Rectangular border around the editor
+DockWindow.BorderColor=#272822
+# Rectangular border around panels (Output panel, Project panel)
+DockPanelControl.BorderColor=#A0A0A0
+# Main and context menus horizontal separator (any menu)
+ToolStripSeparator.ForeColor=#454549
+
+# Main and context menu
+# Submenu arrow (arrow next to Tools > Flash Tools)
+ToolStripItem.ArrowColor=#454549
+# Menu item text
+ToolStripItem.TextColor=#EEEAE5
+
+# Dock panel caption (panel title bar, Output panel title bar containing "Output" header, dock and close buttons)
+# Text when panel is focused (just opened the "Output" panel, or clicked on the docked "Output" panel)
+VS2005DockPaneCaption.ActiveForeColor=#FDFFFF
+# Dock and close buttons when panel is focused
+VS2005DockPaneCaption.ActiveImageColor=#FFFFFF
+# Dock and close buttons when panel is not focused (dock the "Output" panel then click on the editor)
+VS2005DockPaneCaption.ImageColor=#F1F1F1
+# Rectangular border around the caption (title bar)
+VS2005DockPaneCaption.BorderColor=#A0A0A0
+
+# Document tab bar (below the main toolbar, above the editor)
+# Dock panel tab bar (tab bar that appears if several dock panels are grouped together using drag'n'drop, and auto-hide is disabled) - settings with the Tool prefix
+# Rectangular border around the active tab and a horizontal line below the whole tab bar
+VS2005DockPaneStrip.DocTabActiveBorder=#464646
+# Active tab text (filename)
+VS2005DockPaneStrip.DocTabActiveForeColor=#FFFFFF
+# Border around all tabs (horizontal line above all tabs in the tab bar) and tab separator
+VS2005DockPaneStrip.DocTabInactiveBorder=#272822
+# Dock panel tab bar - rectangular border around the active tab and a horizontal line above the whole tab bar
+VS2005DockPaneStrip.ToolActiveBorderColor=#A0A0A0
+# Unused
+VS2005DockPaneStrip.ToolBorderColor=#272822
+# Dock panel tab bar - active tab text
+VS2005DockPaneStrip.ToolActiveForeColor=#FFFFFF
+# Dock panel tab bar - horizontal line above the active tab
+VS2005DockPaneStrip.ToolSeparatorColor=#272822
+# Tabs list and close tab buttons (buttons at the right side of the tab bar)
+VS2005DockPaneStrip.ImageColor=#F1F1F1
+
+# Main and context menus
+# Selected main menu item background ("File" menu when it's open)
+ToolStripMenu.TitleBackColor=#171714
+# Rectangular border around selected main menu item (except horizontal line below the item)
+ToolStripMenu.TitleBorderColor=#171714
+# Horizontal line below selected main menu item
+ToolStripMenu.SeparatorColor=#292928
+# Pressed drop-down list button background ("Recent projects" button in the main toolbar)
+ToolStripMenu.DropDownBackColor=#171714
+# Border around pressed drop-down list button ("Recent projects" button in the main toolbar)
+ToolStripMenu.DropDownBorderColor=#272822
+# Main and context menu icons margin separator (vertical line separating icons margin from menu items)
+ToolStripMenu.MarginBorderColor=#171714
+# Main and context menu icons margin background
+ToolStripMenu.MarginBackColor=#171714
+# Rectangular border around a menu
+ToolStripMenu.BorderColor=#272822
+# Menu background
+ToolStripMenu.BackColor=#171714
+
+# Project panel - text color for added library assets
+# Library (include referenced classes)
+ProjectTreeView.LibraryTextColor=#A6E22E
+# Included library (include completely)
+ProjectTreeView.ExternalLibraryTextColor=#A6E22D
+# External library (not included)
+ProjectTreeView.IncludedLibraryTextColor=#008B8B
+
+# FD UI THEME (4.3+)
+
+### EDIT CONTROLS
+
+# List box - seemingly unused
+ListBox.ForeColor=#F1F1F1
+ListBox.BackColor=#272822
+
+# Text box - seemingly unused
+TextBox.ForeColor=#F1F1F1
+TextBox.BackColor=#272822
+
+# List view (files list view in Files panel)
+# Text
+ListView.ForeColor=#F1F1F1
+# Background
+ListView.BackColor=#272822
+
+# Rich text box (main text box in Logs and Output panels)
+# Text (Output panel uses different colors depending on the type of trace entry)
+RichTextBox.ForeColor=#F1F1F1
+# Background
+RichTextBox.BackColor=#272822
+
+# Fixed tree view (tree view in Outline panel and Types Explorer [Ctrl-J])
+# Seemingly unused
+FixedTreeView.ForeColor=#F1F1F1
+# Seemingly unused
+FixedTreeView.BackColor=#272822
+
+# Basic tree view (tree view in Outline panel and Types Explorer [Ctrl-J])
+# Text
+TreeView.ForeColor=#F1F1F1
+# Background
+TreeView.BackColor=#272822
+
+# Tree node - seemingly unused or irrelevant
+# Text
+TreeNode.ForeColor=#F1F1F1
+# Background
+TreeNode.BackColor=#272822
+
+# Project tree view (tree view in Project panel)
+# Text
+ProjectTreeView.ForeColor=#F1F1F1
+# Background
+ProjectTreeView.BackColor=#272822
+
+# Data tree control (data views in Locals, Watch debugger panels)
+# Text
+DataTreeControl.ForeColor=#F1F1F1
+# Seemingly unused
+DataTreeControl.BackColor=#272822
+
+# Data grid view (data view in Breakpoints debugger panels)
+# Text
+DataGridView.ForeColor=#F1F1F1
+# Background (data rows)
+DataGridView.BackColor=#272822
+# Background (for area not occupied by data rows)
+DataGridView.BackgroundColor=#272822
+
+# Data tree view (data views in Locals, Watch debugger panels)
+# Seemingly unused
+TreeViewAdv.ForeColor=#F1F1F1
+# Background
+TreeViewAdv.BackColor=#272822
+
+# Code tooltip (hover over an identifier in the editor)
+# Text
+RichToolTip.ForeColor=#F1F1F1
+# Background
+RichToolTip.BackColor=#272822
+
+# Completion list, snippet list (press Ctrl-B in the editor to open the snippets list, or type "new " to see the class name completion list)
+# Text
+CompletionList.ForeColor=#F1F1F1
+# Background
+CompletionList.BackColor=#272822
+
+# Message bar ("The package '...' did not match the file path. New package is generated: ..." warning etc.)
+# Text
+MessageBar.ForeColor=#F1F1F1
+# Background
+MessageBar.BackColor=#272822
+
+# Panel (Project panel) - seemingly irrelevant (since the contents have their own colors)
+# Seemingly unused
+Panel.ForeColor=#F1F1F1
+# Background
+Panel.BackColor=#272822
+
+### MAIN INTERFACE
+
+# Quick find bar (Ctrl-F)
+# Text
+QuickFind.ForeColor=#F1F1F1
+# Background
+QuickFind.BackColor=#272822
+
+# Split view
+# Splitter (thick horizontal or vertical line at the outer edge of a dock panel, Output panel or Project panel, or between documents in split mode)
+SplitterControl.BackColor=#272822
+# Split container - seemingly irrelevant (since the contents have their own colors)
+SplitContainer.BackColor=#272822
+# Splitter panel - seemingly irrelevant (since the contents have their own colors)
+SplitterPanel.BackColor=#272822
+
+# Link label (links in the Project panel when there's no project open)
+# Non-link text ("or" between links in the Project panel)
+LinkLabel.ForeColor=#F1F1F1
+# Background
+LinkLabel.BackColor=#272822
+
+### MENUS AND TOOLBARS
+
+# Tree toolbar (toolbar on top of the Project panel)
+# Seemingly unused
+TreeBar.ForeColor=#F1F1F1
+# Background
+TreeBar.BackColor=#272822
+
+# Status bar (at the bottom)
+# Text
+StatusStrip.ForeColor=#F1F1F1
+# Background
+StatusStrip.BackColor=#272822
+
+# Main menu (at the top)
+# Text
+MenuStrip.ForeColor=#F1F1F1
+# Background
+MenuStrip.BackColor=#272822
+
+# Toolbars (main and panel toolbars)
+# Seemingly unused
+ToolStrip.ForeColor=#F1F1F1
+# Background
+ToolStrip.BackColor=#272822
+# vạch ngăn cách giữa các icon (2 vạch liền nhau - pixel bên trái và bên phải)
+# Separator mix color 1
+ToolStrip.3dLightColor=#171812
+# Separator mix color 2
+ToolStrip.3dDarkColor=#222222
+
+# background và border của menu khi over
+# Toolbar item highlight (hover over a main menu item or main toolbar icon)
+# Background
+ToolStripItem.BackColor=#3E3E40
+# Border
+ToolStripItem.BorderColor=#3E3E40
+
+# Combo boxes that appear in toolbars and panels (Debug/Release build in main toolbar, path selector in Files panel, Flash Log Viewer panel filter)
+# Text
+ToolStripComboBoxControl.ForeColor=#F1F1F1
+# Background
+ToolStripComboBoxControl.BackColor=#272822
+
+# Text boxes that appear in toolbars and panels (search text field in Quick find bar, search text field in Outline panel)
+# Text
+ToolStripTextBoxControl.ForeColor=#F1F1F1
+# Background
+ToolStripTextBoxControl.BackColor=#272822
+
+### DOCK SYSTEM
+
+# Dock panel (Output panel) - seemingly irrelevant (since the contents have their own colors)
+# Background
+DockPanel.BackColor=#272822
+
+# Auto-hide panel
+# Seemingly unused
+#AutoHideWindowControl.ForeColor=#FF0000
+# Thin horizontal or vertical line at the outer edge of an autohide dock panel's splitter, Output panel or Project panel
+AutoHideWindowControl.BackColor=#272822
+
+# Dock panel caption (panel title bar, Output panel title bar containing "Output" header, dock and close buttons)
+# Text when panel is not focused (dock the "Output" panel then click on the editor)
+VS2005DockPaneCaption.ForeColor=#CFCFD0
+# Background when panel is not focused
+VS2005DockPaneCaption.BackColor=#272822
+# Background gradient start color when panel is focused (just opened the "Output" panel, or clicked on the docked "Output" panel)
+VS2005DockPaneCaption.TabGradientStart=#464646
+# Background gradient end color when panel is focused (gradient starts near the splitter and ends near the panel contents)
+VS2005DockPaneCaption.TabGradientEnd=#464646
+
+# Document tab bar (tabs that are below the main toolbar, above the editor)
+# Dock panel tab bar (tab bar that appears if several dock panels are grouped together using drag'n'drop, and auto-hide is disabled) - settings with the Tool prefix
+# Dock panel tab bar - inactive tab text
+VS2005DockPaneStrip.ForeColor=#BFC3C7
+# Inactive tab text (filename)
+VS2005DockPaneStrip.TabForeColor=#F1F1F1
+# Background (for area not occupied by tabs)
+VS2005DockPaneStrip.DocBackColor=#272822
+# Dock panel tab bar - background (for inactive tabs and area not occupied by tabs)
+VS2005DockPaneStrip.ToolBackColor=#272822
+# Dock panel tab bar - active tab background
+VS2005DockPaneStrip.ToolActiveBackColor=#272822
+# Active tab background
+VS2005DockPaneStrip.DocActiveBackColor=#464646
+# Inactive tab background
+VS2005DockPaneStrip.DocInactiveBackColor=#272822
+# Horizontal line below the active tab
+VS2005DockPaneStrip.TabSeparatorColor=#464646
+# Two thick vertical lines on the left and right of the last tab (bug? issue #)
+VS2005DockPaneStrip.TabStripColor=#272822
+
+# Auto-hide panel strip (panel icons/titles when auto-hide is enabled)
+# Text
+VS2005AutoHideStrip.ForeColor=#F1F1F1
+# Background
+VS2005AutoHideStrip.BackColor=#272822
+# Rectangular border (only when VS2005AutoHideStrip.TabStyle is set to Default)
+VS2005AutoHideStrip.BorderColor=#272822
