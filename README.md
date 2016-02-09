@@ -1,4 +1,4 @@
-# FlashDevelop Theme s- YDark
+# FlashDevelop Themes - YDark
 A Dark theme for FlashDevelop (FD)
 
 1. Download file: YDark.fdz
