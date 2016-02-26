@@ -8,3 +8,5 @@ A Dark theme for FlashDevelop (FD)
 3. Restart FD
 
 4. Enjoy!
+
+![YDark Preview](https://github.com/ylazy/FlashDevelop-Themes-YDark/blob/master/YDark.png)
