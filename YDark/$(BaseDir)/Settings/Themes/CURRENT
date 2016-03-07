@@ -17,17 +17,19 @@ ScrollBar.HotArrowColor=#A0A0A1
 ScrollBar.ActiveArrowColor=#A0A0A1
 
 ListView.UseGrouping=True
-# màu khớp khi search - background (Outline Panel)
+# màu item background khi click vào (Outline Panel)
 # Highlighted item background (current item in the Results panel)
 ListView.Highlight=#49483E
-# màu text khớp khi search - text
+# màu item text khi click vào (Outline Panel)
 # Highlighted item text (current item in the Results panel)
 ListView.HighlightText=#F1F1F1
-# màu function khi đã click vào và roll out (Outline Panel)
+# màu item (function, var) text khi đã click vào và roll out (Outline Panel)
+# đồng thời là màu khớp item background khi search
 # Highlighted item background (matching items when doing a search in the Outline panel, selected item in the Types Explorer)
 TreeView.Highlight=#66D9EF
+# màu khớp item text khi search
 # Highlighted item text (matching items when doing a search in the Outline panel, selected item in the Types Explorer)
-TreeView.HighlightText=#F1F1F1
+TreeView.HighlightText=#222222
 
 # TraceLevel.DEBUG = 1 (Output Panel)
 # Flash log viewer panel
